@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/components/search_box.dart';
-import 'package:food_app/contants.dart';
+import 'package:food_app/screens/home/components/category_list.dart';
+import 'package:food_app/screens/home/components/discount_card.dart';
+import 'package:food_app/screens/home/components/item_list.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -8,34 +10,14 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         SearchBox(
           onChanged: (value) {},
         ),
-        Row(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-              child: Column(
-                children: <Widget>[
-                  const Text(
-                    'Combo Meal',
-                    style: TextStyle(
-                        color: ktextColor, fontWeight: FontWeight.bold),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 5),
-                    height: 3,
-                    width: 22,
-                    decoration: BoxDecoration(
-                        color: kprimaryColor,
-                        borderRadius: BorderRadius.circular(10)),
-                  )
-                ],
-              ),
-            ),
-          ],
-        ),
+        const CategoryList(),
+        const ItemList(),
+        const DiscountCard(),
       ],
     );
   }
