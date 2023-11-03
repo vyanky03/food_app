@@ -4,7 +4,7 @@ import 'package:food_app/contants.dart';
 
 class ItemCard extends StatelessWidget {
   final String title, shopName, svgSrc;
-  final Function press;
+  final VoidCallback press;
   const ItemCard({
     super.key,
     required this.title,
@@ -32,7 +32,7 @@ class ItemCard extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          // onTap: press,
+          onTap: press,
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Column(
