@@ -1,16 +1,8 @@
-# food_app
+A demo food UI app made with flutter.
 
-A new Flutter project.
+Home Screen:<br />
+<img src="https://github.com/vyanky03/food_app/assets/99646164/5d3bb00d-d594-4802-84db-db0808764679" width="40%" height="40%"><br />
 
-## Getting Started
+Product Screen:<br />
+<img src="https://github.com/vyanky03/food_app/assets/99646164/325e7507-9783-455d-93f1-1d7ea79efc1e" width="40%" height="40%">  
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
